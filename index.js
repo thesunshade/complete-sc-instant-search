@@ -19,7 +19,7 @@ function debounce(fn, delay) {
 
 // Search function
 function performSearch(query) {
-  const normalizedQuery = normalizeString(query);
+  const normalizedQuery = query.startsWith("dhp") ? query : normalizeString(query);
 
   if (normalizedQuery.length >= 2) {
     results = normalizedData.map((normStr, index) => ({ normStr, exact: exactData[index] })).filter(item => item.normStr.includes(normalizedQuery));
