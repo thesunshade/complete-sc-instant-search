@@ -1,0 +1,32 @@
+body {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+/* Simple styling for the search box and dropdown */
+.search-box {
+    width: 500px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    font-size: 20px;
+}
+
+.dropdown {
+    border: 1px solid #ccc;
+    width: 516px;
+    position: absolute;
+    background-color: white;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+}
+
+.dropdown-item {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.dropdown-item:hover,
+.dropdown-item.active {
+    background-color: #d3d3d3;
+}
